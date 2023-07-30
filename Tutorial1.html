@@ -1,0 +1,122 @@
+
+<html>
+<head>
+
+    <title>Small Boxes (Cards) Example</title>
+    <style>
+       
+        .card {
+            width: 200px;
+            height: 150px;
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin: 10px;
+            display: inline-block;
+            text-align: center;
+        }
+		.card2 {
+            width: 200px;
+            height: 350px;
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin: 10px;
+            display: inline-block;
+            text-align: center;
+        }
+		
+		.card .custom-list {
+            list-style-type: none;
+        }
+		.card .custom-list li:before {
+            content: attr(data-letter) ".";
+        }
+		.card2 .custom-list {
+            list-style-type: none;
+        }
+		.card2 .custom-list li:before {
+            content: attr(data-letter) ".";
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+		<ul>
+        <li>Car</li>
+        <li>Van</li>
+        <li>Bus</li>
+		</ul>
+    </div>
+    <div class="card" style="list-style-type: decimal">
+		<ul>
+        <li>Cricket</li>
+        <li>FootBall</li>
+        <li>Rugby</li>
+		<li>Athlete</li>
+		</ul>
+		
+    </div>
+    <div class="card" style="list-style-type: lower-roman">
+		<ul>
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Grapes</li>
+		<li>Banana</li>
+		</ul>
+    </div>
+    <div class="card">
+        <dl>
+		<dt>Apple</dt>
+			<dd> A Fruit</dd>
+		<dt>Cabbage</dt>
+			<dd> A vegetable</dd>
+		
+		
+		</dl>
+    </div>
+    <div class="card">
+		<ul class="custom-list">
+        <li data-letter="XII "> Twelve</li>
+        <li data-letter="XIII "> Thirteen</li>
+        <li data-letter="XIV "> Fourteen</li>
+		<li data-letter="XV "> Fifteen</li>
+		</ul>
+    </div>
+	    <div class="card">
+		<ul class="custom-list">
+        <li data-letter="C "> Tea</li>
+        <li data-letter="B "> Milk</li>
+        <li data-letter="A "> Coffee</li>
+		
+		</ul>
+    </div>
+		 <div class="card2">
+		<ul class="custom-list">
+        <li data-letter="I ">Group A
+<ul>
+        <li data-letter="i "> Germany</li>
+        <li data-letter="ii "> France</li>
+        <li data-letter="iii "> Spain</li>
+		</ul>
+			</li>
+
+        <li data-letter="II "> Group B
+<ul>
+        <li data-letter="i "> Brazil</li>
+        <li data-letter="ii "> Argentina</li>
+        <li data-letter="iii "> Protugal</li>
+		</ul>
+			</li>
+			
+		<li data-letter="III "> Group C
+<ul>
+        <li data-letter="i "> Italy</li>
+        <li data-letter="ii "> Nedtherland</li>
+        <li data-letter="iii "> England</li>
+		</ul>
+			 </li>
+	 </ul>
+	</div>
+</body>
+</html>
